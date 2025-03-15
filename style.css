@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+    --break-sm: 576px;
+    --break-md: 768px;
+    --break-lg: 992px;
+    --break-xl: 1200px;
+    --break-xxl: 1400px;
+    --blue: #4493f8;
+    --green: #238636;
+    --green-hover: #29903b;
+    --cotton: #f0f6fc;
+    --cloud: #9198a1;
+    --slate: #3d444d;
+    --ash: #262C36;
+    --deep: #212830;
+    --coal: #151B23;
+    --dark: #0D1117;
+    --ninja: #010409;
+}
+
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--ninja);
+}
+
+.changelog {
+    border: 1px solid var(--slate);
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--dark);
+}
+
+.changelog__title {
+    margin-bottom: 1rem;
+    color: var(--cotton);
+}
+
+.changelog__description {
+    color: var(--cloud);
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.changelog__header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.timeline {
+    padding: 1rem;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.timeline__item {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.timeline__item::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: .5rem;
+    bottom: 0;
+    width: .125rem;
+    background-color: var(--slate);
+}
+
+.timeline__date {
+    position: relative;
+    color: var(--cloud);
+    line-height: 1rem;
+    margin-bottom: .25rem;
+    padding-left: 1rem;
+}
+
+.timeline__date::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -.475rem ;
+    width: 1rem;
+    height: 1rem;
+    border-radius: .5rem;
+    background-color: var(--slate);
+}
+
+.timeline__content {
+    color: var(--cotton);
+    padding-left: 1rem;
+}
+
+
+.changelog__link {
+    display: inline-block;
+    margin: 2rem;
+    color: var(--cloud);
+    text-decoration: none;
+}
+
+
+.changelog__link:hover {
+    color: var(--blue);
+}
